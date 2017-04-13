@@ -6,22 +6,22 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="A Material Design theme for MkDocs">
+        <meta name="description" content="A Custom Material Design Theme for MkDocs">
       
       
-        <link rel="canonical" href="http://squidfunk.github.io/mkdocs-material/getting-started/">
+        <link rel="canonical" href="http://mjames-upc.github.io/mkdocs-unidata/getting-started/">
       
       
-        <meta name="author" content="Martin Donath">
+        <meta name="author" content="Michael James">
       
       
-        <link rel="shortcut icon" href="../assets/images/favicon.png">
+        <link rel="shortcut icon" href="../assets/images/favicon.ico">
       
       <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.5.4">
     
     
       
-        <title>Getting started - Material for MkDocs</title>
+        <title>Getting started - Unidata Material Design Theme</title>
       
     
     
@@ -29,8 +29,6 @@
     
     
       <link rel="stylesheet" href="../assets/stylesheets/application-b1a1975878.css">
-      
-        <link rel="stylesheet" href="../assets/stylesheets/application-f78e5cb881.palette.css">
       
     
     
@@ -50,7 +48,7 @@
   
   
   
-    <body data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body>
   
     <svg class="md-svg">
       <defs>
@@ -66,10 +64,13 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
+    
+      <div class="background-logo" style="background-image: url(../images/corner_logo.png);"></div>
+    
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs" class="md-icon md-icon--home md-header-nav__button">
+          <a href="http://mjames-upc.github.io/mkdocs-unidata/" title="Unidata Material Design Theme" class="md-icon md-icon--home md-header-nav__button">
           </a>
         
       </div>
@@ -82,7 +83,9 @@
             
               
             
-            Getting started
+            
+              Getting started
+            
           
         </span>
       </div>
@@ -121,7 +124,7 @@
   
 
 
-  <a href="https://github.com/squidfunk/mkdocs-material" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/mjames-upc/mkdocs-unidata" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -130,7 +133,7 @@
       </div>
     
     <div class="md-source__repository">
-      squidfunk/mkdocs-material
+      mjames-upc/mkdocs-unidata
     </div>
   </a>
 
@@ -156,7 +159,7 @@
     
       <i class="md-icon md-icon--home md-nav__button"></i>
     
-    Material for MkDocs
+    Unidata Material Design Theme
   </label>
   
     <div class="md-nav__source">
@@ -166,7 +169,7 @@
   
 
 
-  <a href="https://github.com/squidfunk/mkdocs-material" title="Go to repository" class="md-source" data-md-source="github">
+  <a href="https://github.com/mjames-upc/mkdocs-unidata" title="Go to repository" class="md-source" data-md-source="github">
     
       <div class="md-source__icon">
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -175,7 +178,7 @@
       </div>
     
     <div class="md-source__repository">
-      squidfunk/mkdocs-material
+      mjames-upc/mkdocs-unidata
     </div>
   </a>
 
@@ -189,8 +192,8 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Material" class="md-nav__link">
-      Material
+    <a href=".." title="Home" class="md-nav__link">
+      Home
     </a>
   </li>
 
@@ -228,23 +231,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" title="Installation" class="md-nav__link">
-    Installation
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installing-mkdocs" title="Installing MkDocs" class="md-nav__link">
-    Installing MkDocs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#installing-material" title="Installing Material" class="md-nav__link">
-    Installing Material
+  <a href="#install-unidata-theme" title="Install Unidata Theme" class="md-nav__link">
+    Install Unidata Theme
   </a>
   
     <nav class="md-nav">
@@ -258,21 +246,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-choco" title="using choco" class="md-nav__link">
-    using choco
+  <a href="#clone-from-github" title="clone from GitHub" class="md-nav__link">
+    clone from GitHub
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cloning-from-github" title="cloning from GitHub" class="md-nav__link">
-    cloning from GitHub
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -304,29 +280,16 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#changing-the-color-palette" title="Changing the color palette" class="md-nav__link">
-    Changing the color palette
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#primary-colors" title="Primary colors" class="md-nav__link">
-    Primary colors
+  <a href="#color-palette" title="Color palette" class="md-nav__link">
+    Color palette
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#accent-colors" title="Accent colors" class="md-nav__link">
-    Accent colors
+  <a href="#corner-logo" title="Corner logo" class="md-nav__link">
+    Corner logo
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -598,23 +561,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" title="Installation" class="md-nav__link">
-    Installation
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installing-mkdocs" title="Installing MkDocs" class="md-nav__link">
-    Installing MkDocs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#installing-material" title="Installing Material" class="md-nav__link">
-    Installing Material
+  <a href="#install-unidata-theme" title="Install Unidata Theme" class="md-nav__link">
+    Install Unidata Theme
   </a>
   
     <nav class="md-nav">
@@ -628,21 +576,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-choco" title="using choco" class="md-nav__link">
-    using choco
+  <a href="#clone-from-github" title="clone from GitHub" class="md-nav__link">
+    clone from GitHub
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cloning-from-github" title="cloning from GitHub" class="md-nav__link">
-    cloning from GitHub
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -674,29 +610,16 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#changing-the-color-palette" title="Changing the color palette" class="md-nav__link">
-    Changing the color palette
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#primary-colors" title="Primary colors" class="md-nav__link">
-    Primary colors
+  <a href="#color-palette" title="Color palette" class="md-nav__link">
+    Color palette
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#accent-colors" title="Accent colors" class="md-nav__link">
-    Accent colors
+  <a href="#corner-logo" title="Corner logo" class="md-nav__link">
+    Corner logo
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -797,67 +720,23 @@
               
                 
                 
-                <h1 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<div class="admonition tip">
-<p class="admonition-title">Set up Material using Docker</p>
-<p>The official <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">Docker image</a> for Material comes with all dependencies
-pre-installed and ready-to-use with the latest version published on PyPI,
-packaged in a very small image (28MB compressed).</p>
-</div>
-<h3 id="installing-mkdocs">Installing MkDocs<a class="headerlink" href="#installing-mkdocs" title="Permanent link">&para;</a></h3>
-<p>Before installing <a href="http://www.mkdocs.org">MkDocs</a>, you need to make sure you have Python and <code>pip</code>
-– the Python package manager – up and running. You can verify if you're already
-good to go with the following commands:</p>
-<div class="codehilite"><pre><span></span>python --version
-<span class="c1"># Python 2.7.13</span>
-pip --version
-<span class="c1"># pip 9.0.1</span>
-</pre></div>
-
-
-<p>Installing and verifying MkDocs is as simple as:</p>
-<div class="codehilite"><pre><span></span>pip install mkdocs <span class="o">&amp;&amp;</span> mkdocs --version
-<span class="c1"># mkdocs, version 0.16.0</span>
-</pre></div>
-
-
-<div class="admonition warning">
-<p class="admonition-title">MkDocs version requirements</p>
-<p>Material requires MkDocs &gt;= 0.16.</p>
-</div>
-<p>Furthermore, it is highly recommended to install <a href="http://pygments.org">Pygments</a> and the
-<a href="http://facelessuser.github.io/pymdown-extensions/">PyMdown Extensions</a> to get the most out of the Material theme:</p>
-<div class="codehilite"><pre><span></span>pip install pygments
-pip install pymdown-extensions
-</pre></div>
-
-
-<h3 id="installing-material">Installing Material<a class="headerlink" href="#installing-material" title="Permanent link">&para;</a></h3>
+                <h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
+<h2 id="install-unidata-theme">Install Unidata Theme<a class="headerlink" href="#install-unidata-theme" title="Permanent link">&para;</a></h2>
 <h4 id="using-pip">using pip<a class="headerlink" href="#using-pip" title="Permanent link">&para;</a></h4>
-<p>Material can be installed with <code>pip</code>:</p>
-<div class="codehilite"><pre><span></span>pip install mkdocs-material
+<div class="codehilite"><pre><span></span>pip install mkdocs-unidata
 </pre></div>
 
 
-<h4 id="using-choco">using choco<a class="headerlink" href="#using-choco" title="Permanent link">&para;</a></h4>
-<p>If you're on Windows you can use <a href="https://chocolatey.org">Chocolatey</a> to install <a href="https://chocolatey.org/packages/mkdocs-material">Material</a>:</p>
-<div class="codehilite"><pre><span></span>choco install mkdocs-material
-</pre></div>
-
-
-<p>This will also install all required dependencies like <a href="https://chocolatey.org/packages/python">Python</a> and
-<a href="https://chocolatey.org/packages/mkdocs">MkDocs</a>.</p>
-<h4 id="cloning-from-github">cloning from GitHub<a class="headerlink" href="#cloning-from-github" title="Permanent link">&para;</a></h4>
+<h4 id="clone-from-github">clone from GitHub<a class="headerlink" href="#clone-from-github" title="Permanent link">&para;</a></h4>
 <p>Material can also be used without a system-wide installation by cloning the
 repository into a subfolder of your project's root directory:</p>
-<div class="codehilite"><pre><span></span>git clone https://github.com/squidfunk/mkdocs-material.git
+<div class="codehilite"><pre><span></span>git clone https://github.com/Unidata/mkdocs-unidata.git
 </pre></div>
 
 
 <p>This is especially useful if you want to extend the theme and override some
 parts of the theme. The theme will reside in the folder
-<code>mkdocs-material/material</code>.</p>
+<code>mkdocs-unidata/unidata</code>.</p>
 <h3 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Installation on macOS</p>
@@ -878,7 +757,7 @@ the adequate permissions. There are two possible solutions for this:</p>
 </ol>
 </div>
 <div class="admonition failure">
-<p class="admonition-title">Error: unrecognized theme 'material'</p>
+<p class="admonition-title">Error: unrecognized theme 'unidata'</p>
 <p>If you run into this error, the most common reason is that you installed
 MkDocs through some package manager (e.g. Homebrew or <code>apt-get</code>) and the
 Material theme through <code>pip</code>, so both packages end up in different
@@ -887,12 +766,12 @@ locations. MkDocs only checks it's install location for themes.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>In order to enable the Material theme just add one of the following lines to
 your <code>mkdocs.yml</code>. If you installed Material using pip:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span> <span class="s">&#39;material&#39;</span>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span> <span class="s">&#39;unidata&#39;</span>
 </pre></div>
 
 
 <p>If you cloned Material from GitHub:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme_dir</span><span class="p p-Indicator">:</span> <span class="s">&#39;mkdocs-material/material&#39;</span>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme_dir</span><span class="p p-Indicator">:</span> <span class="s">&#39;mkdocs-unidata/unidata&#39;</span>
 </pre></div>
 
 
@@ -906,86 +785,18 @@ The development server can be started with the following command:</p>
 should be visible. From here on, you can start writing your documentation, or
 read on and customize the theme through some options.</p>
 <h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
-<p>The Material theme adds some extra variables for configuration via your
+<p>The Unidata Material theme adds some extra variables for configuration via your
 project's <code>mkdocs.yml</code>. See the following sections for all available options.</p>
-<h3 id="changing-the-color-palette">Changing the color palette<a class="headerlink" href="#changing-the-color-palette" title="Permanent link">&para;</a></h3>
-<p>Material defines a default hue for every primary and accent color on Google's
-Material Design <a href="http://www.materialui.co/colors">color palette</a>. This makes it very easy to change the
-overall look of the theme. Just set the primary and accent colors using the
-following variables in your <code>mkdocs.yml</code>:</p>
+<h3 id="color-palette">Color palette<a class="headerlink" href="#color-palette" title="Permanent link">&para;</a></h3>
+<p>The default color scheme attempts to match the existing <a href="http://www.unidata.ucar.edu">Unidata home page</a> color scheme. Primary color is set to (<span style="font-weight:bold;color:#07778f;">#07778f</span>) in <code>unidata/assets/stylesheets/application-b1a1975878.css</code>.</p>
+<h3 id="corner-logo">Corner logo<a class="headerlink" href="#corner-logo" title="Permanent link">&para;</a></h3>
+<p>You can specify the top-left logo file in <code>mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">palette</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">primary</span><span class="p p-Indicator">:</span> <span class="s">&#39;indigo&#39;</span>
-    <span class="l l-Scalar l-Scalar-Plain">accent</span><span class="p p-Indicator">:</span> <span class="s">&#39;light</span><span class="nv"> </span><span class="s">blue&#39;</span>
+  <span class="l l-Scalar l-Scalar-Plain">corner_logo</span><span class="p p-Indicator">:</span> <span class="s">&#39;images/corner_logo.png&#39;</span>
 </pre></div>
 
 
-<p>Color names are case-insensitive, but must match the names of the Material
-Design color palette. Valid values are: <code>red</code>, <code>pink</code>, <code>purple</code>, <code>deep purple</code>,
-<code>indigo</code>, <code>blue</code>, <code>light blue</code>, <code>cyan</code>, <code>teal</code>, <code>green</code>, <code>light green</code>, <code>lime</code>,
-<code>yellow</code>, <code>amber</code>, <code>orange</code>, <code>deep orange</code>, <code>brown</code>, <code>grey</code> and <code>blue grey</code>.
-The last three colors can only be used as a primary color.</p>
-<p>If the color is set via this configuration, an additional CSS file that
-defines the color palette is included. If you want to keep things lean, clone
-the repository and recompile the theme with your custom colors set. See the
-guide on <a href="../customization/">customization</a> for more information.</p>
-<h4 id="primary-colors">Primary colors<a class="headerlink" href="#primary-colors" title="Permanent link">&para;</a></h4>
-<p>Click on a tile to change the primary color of the theme:</p>
-<p><button data-md-color-primary="red">Red</button>
-<button data-md-color-primary="pink">Pink</button>
-<button data-md-color-primary="purple">Purple</button>
-<button data-md-color-primary="deep-purple">Deep Purple</button>
-<button data-md-color-primary="indigo">Indigo</button>
-<button data-md-color-primary="blue">Blue</button>
-<button data-md-color-primary="light-blue">Light Blue</button>
-<button data-md-color-primary="cyan">Cyan</button>
-<button data-md-color-primary="teal">Teal</button>
-<button data-md-color-primary="green">Green</button>
-<button data-md-color-primary="light-green">Light Green</button>
-<button data-md-color-primary="lime">Lime</button>
-<button data-md-color-primary="yellow">Yellow</button>
-<button data-md-color-primary="amber">Amber</button>
-<button data-md-color-primary="orange">Orange</button>
-<button data-md-color-primary="deep-orange">Deep Orange</button>
-<button data-md-color-primary="brown">Brown</button>
-<button data-md-color-primary="grey">Grey</button>
-<button data-md-color-primary="blue-grey">Blue Grey</button></p>
-<script>
-  var buttons = document.querySelectorAll("button[data-md-color-primary]");
-  Array.prototype.forEach.call(buttons, function(button) {
-    button.addEventListener("click", function() {
-      document.body.dataset.mdColorPrimary = this.dataset.mdColorPrimary;
-    })
-  })
-</script>
-
-<h4 id="accent-colors">Accent colors<a class="headerlink" href="#accent-colors" title="Permanent link">&para;</a></h4>
-<p>Click on a tile to change the accent color of the theme:</p>
-<p><button data-md-color-accent="red">Red</button>
-<button data-md-color-accent="pink">Pink</button>
-<button data-md-color-accent="purple">Purple</button>
-<button data-md-color-accent="deep-purple">Deep Purple</button>
-<button data-md-color-accent="indigo">Indigo</button>
-<button data-md-color-accent="blue">Blue</button>
-<button data-md-color-accent="light-blue">Light Blue</button>
-<button data-md-color-accent="cyan">Cyan</button>
-<button data-md-color-accent="teal">Teal</button>
-<button data-md-color-accent="green">Green</button>
-<button data-md-color-accent="light-green">Light Green</button>
-<button data-md-color-accent="lime">Lime</button>
-<button data-md-color-accent="yellow">Yellow</button>
-<button data-md-color-accent="amber">Amber</button>
-<button data-md-color-accent="orange">Orange</button>
-<button data-md-color-accent="deep-orange">Deep Orange</button></p>
-<script>
-  var buttons = document.querySelectorAll("button[data-md-color-accent]");
-  Array.prototype.forEach.call(buttons, function(button) {
-    button.addEventListener("click", function() {
-      document.body.dataset.mdColorAccent = this.dataset.mdColorAccent;
-    })
-  })
-</script>
-
+<p>where the file exists in your repo as <code>docs/images/corner_logo.png</code>.</p>
 <h3 id="changing-the-font-family">Changing the font family<a class="headerlink" href="#changing-the-font-family" title="Permanent link">&para;</a></h3>
 <p>Material uses the <a href="https://fonts.google.com/specimen/Roboto">Roboto font family</a> by default, specifically the regular
 sans-serif type for text and the <code>monospaced</code> type for code. Both fonts are
@@ -1048,11 +859,11 @@ and the <code>link</code> must contain the URL you want to link to:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
   <span class="l l-Scalar l-Scalar-Plain">social</span><span class="p p-Indicator">:</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;github&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://github.com/squidfunk&#39;</span>
+      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://github.com/Unidata&#39;</span>
     <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;twitter&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://twitter.com/squidfunk&#39;</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;linkedin&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://de.linkedin.com/in/martin-donath-20a95039&#39;</span>
+      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://twitter.com/Unidata&#39;</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;faceboook&#39;</span>
+      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://facebook.com/Unidata&#39;</span>
 </pre></div>
 
 
@@ -1142,50 +953,78 @@ Material theme including more information regarding installation and usage:</p>
 <li><a href="../extensions/pymdown/">PyMdown Extensions</a></li>
 </ul>
 <h2 id="full-example">Full example<a class="headerlink" href="#full-example" title="Permanent link">&para;</a></h2>
-<p>Below is a full example configuration for a <code>mkdocs.yml</code>:</p>
+<p>Below is the full example configuration for this project's <code>mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="c1"># Project information</span>
-<span class="l l-Scalar l-Scalar-Plain">site_name</span><span class="p p-Indicator">:</span> <span class="s">&#39;My</span><span class="nv"> </span><span class="s">Project&#39;</span>
-<span class="l l-Scalar l-Scalar-Plain">site_description</span><span class="p p-Indicator">:</span> <span class="s">&#39;A</span><span class="nv"> </span><span class="s">short</span><span class="nv"> </span><span class="s">description</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">my</span><span class="nv"> </span><span class="s">project&#39;</span>
-<span class="l l-Scalar l-Scalar-Plain">site_author</span><span class="p p-Indicator">:</span> <span class="s">&#39;John</span><span class="nv"> </span><span class="s">Doe&#39;</span>
-<span class="l l-Scalar l-Scalar-Plain">site_url</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://my-github-handle.github.io/my-project&#39;</span>
-
+<span class="l l-Scalar l-Scalar-Plain">site_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Unidata Material Design Theme</span>
+<span class="l l-Scalar l-Scalar-Plain">site_description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">A Custom Material Design Theme for MkDocs</span>
+<span class="l l-Scalar l-Scalar-Plain">site_author</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Michael James</span>
+<span class="l l-Scalar l-Scalar-Plain">site_url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">http://unidata.github.io/mkdocs-unidata/</span>
+<span class="l l-Scalar l-Scalar-Plain">site_favicon</span><span class="p p-Indicator">:</span> <span class="s">&#39;assets/images/favicon.ico&#39;</span>
 <span class="c1"># Repository</span>
-<span class="l l-Scalar l-Scalar-Plain">repo_name</span><span class="p p-Indicator">:</span> <span class="s">&#39;my-github-handle/my-project&#39;</span>
-<span class="l l-Scalar l-Scalar-Plain">repo_url</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://github.com/my-github-handle/my-project&#39;</span>
+<span class="l l-Scalar l-Scalar-Plain">repo_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Unidata/mkdocs-unidata</span>
+<span class="l l-Scalar l-Scalar-Plain">repo_url</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/Unidata/mkdocs-unidata</span>
 
-<span class="c1"># Copyright</span>
-<span class="l l-Scalar l-Scalar-Plain">copyright</span><span class="p p-Indicator">:</span> <span class="s">&#39;Copyright</span><span class="nv"> </span><span class="s">&amp;copy;</span><span class="nv"> </span><span class="s">2016</span><span class="nv"> </span><span class="s">-</span><span class="nv"> </span><span class="s">2017</span><span class="nv"> </span><span class="s">John</span><span class="nv"> </span><span class="s">Doe&#39;</span>
-
-<span class="c1"># Documentation and theme</span>
-<span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span> <span class="s">&#39;material&#39;</span>
+<span class="c1"># Theme directory</span>
+<span class="l l-Scalar l-Scalar-Plain">theme_dir</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">unidata</span>
 
 <span class="c1"># Options</span>
 <span class="l l-Scalar l-Scalar-Plain">extra</span><span class="p p-Indicator">:</span>
-  <span class="l l-Scalar l-Scalar-Plain">logo</span><span class="p p-Indicator">:</span> <span class="s">&#39;images/logo.svg&#39;</span>
-  <span class="l l-Scalar l-Scalar-Plain">palette</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">primary</span><span class="p p-Indicator">:</span> <span class="s">&#39;indigo&#39;</span>
-    <span class="l l-Scalar l-Scalar-Plain">accent</span><span class="p p-Indicator">:</span> <span class="s">&#39;indigo&#39;</span>
-  <span class="l l-Scalar l-Scalar-Plain">font</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">text</span><span class="p p-Indicator">:</span> <span class="s">&#39;Roboto&#39;</span>
-    <span class="l l-Scalar l-Scalar-Plain">code</span><span class="p p-Indicator">:</span> <span class="s">&#39;Roboto</span><span class="nv"> </span><span class="s">Mono&#39;</span>
+  <span class="l l-Scalar l-Scalar-Plain">corner_logo</span><span class="p p-Indicator">:</span> <span class="s">&#39;images/corner_logo.png&#39;</span>
+  <span class="l l-Scalar l-Scalar-Plain">feature</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">tabs</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
   <span class="l l-Scalar l-Scalar-Plain">social</span><span class="p p-Indicator">:</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;github&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://github.com/john-doe&#39;</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;twitter&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://twitter.com/jonh-doe&#39;</span>
-    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="s">&#39;linkedin&#39;</span>
-      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="s">&#39;https://de.linkedin.com/in/john-doe&#39;</span>
-
-<span class="c1"># Google Analytics</span>
-<span class="l l-Scalar l-Scalar-Plain">google_analytics</span><span class="p p-Indicator">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&#39;UA-XXXXXXXX-X&#39;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&#39;auto&#39;</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">globe</span>
+      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">http://www.unidata.ucar.edu</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">github-alt</span>
+      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://github.com/Unidata</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">twitter</span>
+      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://twitter.com/Unidata</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">facebook</span>
+      <span class="l l-Scalar l-Scalar-Plain">link</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">https://facebook.com/Unidata</span>
 
 <span class="c1"># Extensions</span>
 <span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admonition</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite(guess_lang=false)</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">toc(permalink=true)</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">markdown.extensions.admonition</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">markdown.extensions.codehilite(guess_lang=false)</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">markdown.extensions.def_list</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">markdown.extensions.footnotes</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">markdown.extensions.meta</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">markdown.extensions.toc(permalink=true)</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.arithmatex</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.betterem(smart_enable=all)</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.caret</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.critic</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.emoji</span><span class="p p-Indicator">:</span>
+      <span class="l l-Scalar l-Scalar-Plain">emoji_generator</span><span class="p p-Indicator">:</span> <span class="kt">!!python/name:pymdownx.emoji.to_svg</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.inlinehilite</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.magiclink</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.mark</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.smartsymbols</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.superfences</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.tasklist(custom_checkbox=true)</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.tilde</span>
+
+<span class="c1"># Page tree</span>
+<span class="l l-Scalar l-Scalar-Plain">pages</span><span class="p p-Indicator">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Home</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">index.md</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Getting started</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">getting-started.md</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Extensions</span><span class="p p-Indicator">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Admonition</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">extensions/admonition.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">CodeHilite</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">extensions/codehilite.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Footnotes</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">extensions/footnotes.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Metadata</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">extensions/metadata.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Permalinks</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">extensions/permalinks.md</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PyMdown</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">extensions/pymdown.md</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Specimen</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">specimen.md</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Customization</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">customization.md</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Release notes</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">release-notes.md</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Contributing</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">contributing.md</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">License</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">license.md</span>
+
+<span class="c1"># Google Analytics</span>
+<span class="l l-Scalar l-Scalar-Plain">google_analytics</span><span class="p p-Indicator">:</span>
+  <span class="p p-Indicator">-</span> <span class="kt">!!python/object/apply:os.getenv</span> <span class="p p-Indicator">[</span><span class="s">&quot;GOOGLE_ANALYTICS_KEY&quot;</span><span class="p p-Indicator">]</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">auto</span>
 </pre></div>
                 
                   
@@ -1205,7 +1044,7 @@ Material theme including more information regarding installation and usage:</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="Material" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1214,7 +1053,7 @@ Material theme including more information regarding installation and usage:</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Material
+                Home
               </span>
             </div>
           </a>
@@ -1241,10 +1080,6 @@ Material theme including more information regarding installation and usage:</p>
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
-          <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016 - 2017 Martin Donath
-          </div>
-        
         powered by
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
         and
@@ -1257,13 +1092,13 @@ Material theme including more information regarding installation and usage:</p>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-      <a href="http://struct.cc" class="md-footer-social__link fa fa-globe"></a>
+      <a href="http://www.unidata.ucar.edu" class="md-footer-social__link fa fa-globe"></a>
     
-      <a href="https://github.com/squidfunk" class="md-footer-social__link fa fa-github-alt"></a>
+      <a href="https://github.com/Unidata" class="md-footer-social__link fa fa-github-alt"></a>
     
-      <a href="https://twitter.com/squidfunk" class="md-footer-social__link fa fa-twitter"></a>
+      <a href="https://twitter.com/Unidata" class="md-footer-social__link fa fa-twitter"></a>
     
-      <a href="https://de.linkedin.com/in/martin-donath-20a95039" class="md-footer-social__link fa fa-linkedin"></a>
+      <a href="https://facebook.com/Unidata" class="md-footer-social__link fa fa-facebook"></a>
     
   </div>
 
@@ -1280,7 +1115,7 @@ Material theme including more information regarding installation and usage:</p>
     
     
       
-      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-73586301-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
       
     
   </body>
