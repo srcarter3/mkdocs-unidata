@@ -4,7 +4,7 @@
 
   [travis-image]: https://travis-ci.org/mjames-upc/mkdocs-unidata.svg?branch=master
   [travis-link]: https://travis-ci.org/mjames-upc/mkdocs-unidata
-  [codacy-image]: https://api.codacy.com/project/badge/Grade/fe07aa1fa91d453cb69711d3885c5d7e
+  [codacy-image]: https://api.codacy.com/project/badge/Grade/1e6e1042cc0d43c98dc42847ef3b428a
   [codacy-link]: https://www.codacy.com/app/mjames/mkdocs-unidata?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mjames/mkdocs-unidata&amp;utm_campaign=Badge_Grade
   [pypi-image]: https://img.shields.io/pypi/v/mkdocs-unidata.svg
   [pypi-link]: https://pypi.python.org/pypi/mkdocs-unidata
