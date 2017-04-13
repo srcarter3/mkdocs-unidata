@@ -1,16 +1,11 @@
 # Contributing
 
+!!! note "This project is based on [github.com/squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)"
+
 Interested in contributing to the Material theme? Want to report a bug? Before
 you do, please read the following guidelines.
 
 ## Submission context
-
-### Got a question or problem?
-
-For quick questions there's no need to open an issue as you can reach us on
-[gitter.im][1].
-
-  [1]: https://gitter.im/mkdocs-material/general
 
 ### Found a bug?
 

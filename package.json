@@ -7,9 +7,9 @@
     "documentation",
     "theme"
   ],
-  "homepage": "http://mjames-upc.github.io/mkdocs-unidata/",
+  "homepage": "http://unidata.github.io/mkdocs-unidata/",
   "bugs": {
-    "url": "https://github.com/mjames-upc/mkdocs-unidata/issues",
+    "url": "https://github.com/Unidata/mkdocs-unidata/issues",
     "email": "mjames@ucar.edu"
   },
   "license": "MIT",
@@ -20,7 +20,7 @@
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mjames-upc/mkdocs-unidata.git"
+    "url": "https://github.com/Unidata/mkdocs-unidata.git"
   },
   "scripts": {
     "build": "scripts/build",

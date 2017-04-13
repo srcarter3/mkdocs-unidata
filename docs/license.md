@@ -1,5 +1,7 @@
 # License
 
+!!! note "This project is based on [github.com/squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)"
+
 **MIT License**
 
 Copyright &copy; 2016 - 2017 Martin Donath

@@ -1,89 +1,26 @@
-# Getting started
+# Getting Started
 
-## Installation
-
-!!! tip "Set up Material using Docker"
-
-    The official [Docker image][1] for Material comes with all dependencies
-    pre-installed and ready-to-use with the latest version published on PyPI,
-    packaged in a very small image (28MB compressed).
-
-  [1]: https://hub.docker.com/r/squidfunk/mkdocs-material/
-
-### Installing MkDocs
-
-Before installing [MkDocs][2], you need to make sure you have Python and `pip`
-– the Python package manager – up and running. You can verify if you're already
-good to go with the following commands:
-
-``` sh
-python --version
-# Python 2.7.13
-pip --version
-# pip 9.0.1
-```
-
-Installing and verifying MkDocs is as simple as:
-
-``` sh
-pip install mkdocs && mkdocs --version
-# mkdocs, version 0.16.0
-```
-
-!!! warning "MkDocs version requirements"
-
-    Material requires MkDocs >= 0.16.
-
-Furthermore, it is highly recommended to install [Pygments][3] and the
-[PyMdown Extensions][4] to get the most out of the Material theme:
-
-```sh
-pip install pygments
-pip install pymdown-extensions
-```
-
-  [2]: http://www.mkdocs.org
-  [3]: http://pygments.org
-  [4]: http://facelessuser.github.io/pymdown-extensions/
-
-### Installing Material
+## Install Unidata Theme
 
 #### using pip
 
-Material can be installed with `pip`:
 
 ``` sh
-pip install mkdocs-material
+pip install mkdocs-unidata
 ```
 
-#### using choco
-
-If you're on Windows you can use [Chocolatey][5] to install [Material][6]:
-
-``` dos
-choco install mkdocs-material
-```
-
-This will also install all required dependencies like [Python][7] and
-[MkDocs][8].
-
-  [5]: https://chocolatey.org
-  [6]: https://chocolatey.org/packages/mkdocs-material
-  [7]: https://chocolatey.org/packages/python
-  [8]: https://chocolatey.org/packages/mkdocs
-
-#### cloning from GitHub
+#### clone from GitHub
 
 Material can also be used without a system-wide installation by cloning the
 repository into a subfolder of your project's root directory:
 
 ``` sh
-git clone https://github.com/squidfunk/mkdocs-material.git
+git clone https://github.com/Unidata/mkdocs-unidata.git
 ```
 
 This is especially useful if you want to extend the theme and override some
 parts of the theme. The theme will reside in the folder
-`mkdocs-material/material`.
+`mkdocs-unidata/unidata`.
 
 ### Troubleshooting
 
@@ -101,7 +38,7 @@ parts of the theme. The theme will reside in the folder
       to a self-contained solution by installing Python with Homebrew. This
       should eliminate a lot of problems you may be having with `pip`.
 
-!!! failure "Error: unrecognized theme 'material'"
+!!! failure "Error: unrecognized theme 'unidata'"
 
     If you run into this error, the most common reason is that you installed
     MkDocs through some package manager (e.g. Homebrew or `apt-get`) and the
@@ -114,13 +51,13 @@ In order to enable the Material theme just add one of the following lines to
 your `mkdocs.yml`. If you installed Material using pip:
 
 ``` yaml
-theme: 'material'
+theme: 'unidata'
 ```
 
 If you cloned Material from GitHub:
 
 ``` yaml
-theme_dir: 'mkdocs-material/material'
+theme_dir: 'mkdocs-unidata/unidata'
 ```
 
 MkDocs includes a development server, so you can review your changes as you go.
@@ -138,99 +75,24 @@ read on and customize the theme through some options.
 
 ## Options
 
-The Material theme adds some extra variables for configuration via your
+The Unidata Material theme adds some extra variables for configuration via your
 project's `mkdocs.yml`. See the following sections for all available options.
 
-### Changing the color palette
+### Color palette
 
-Material defines a default hue for every primary and accent color on Google's
-Material Design [color palette][10]. This makes it very easy to change the
-overall look of the theme. Just set the primary and accent colors using the
-following variables in your `mkdocs.yml`:
+The default color scheme attempts to match the existing [Unidata home page](http://www.unidata.ucar.edu) color scheme. Primary color is set to (<span style="font-weight:bold;color:#07778f;">#07778f</span>) in `unidata/assets/stylesheets/application-b1a1975878.css`.
+
+### Corner logo
+
+You can specify the top-left logo file in `mkdocs.yml`:
 
 ``` yaml
 extra:
-  palette:
-    primary: 'indigo'
-    accent: 'light blue'
+  corner_logo: 'images/corner_logo.png'
 ```
 
-Color names are case-insensitive, but must match the names of the Material
-Design color palette. Valid values are: `red`, `pink`, `purple`, `deep purple`,
-`indigo`, `blue`, `light blue`, `cyan`, `teal`, `green`, `light green`, `lime`,
-`yellow`, `amber`, `orange`, `deep orange`, `brown`, `grey` and `blue grey`.
-The last three colors can only be used as a primary color.
+where the file exists in your repo as `docs/images/corner_logo.png`.
 
-If the color is set via this configuration, an additional CSS file that
-defines the color palette is included. If you want to keep things lean, clone
-the repository and recompile the theme with your custom colors set. See the
-guide on [customization][11] for more information.
-
-  [10]: http://www.materialui.co/colors
-  [11]: customization.md
-
-#### Primary colors
-
-Click on a tile to change the primary color of the theme:
-
-<button data-md-color-primary="red">Red</button>
-<button data-md-color-primary="pink">Pink</button>
-<button data-md-color-primary="purple">Purple</button>
-<button data-md-color-primary="deep-purple">Deep Purple</button>
-<button data-md-color-primary="indigo">Indigo</button>
-<button data-md-color-primary="blue">Blue</button>
-<button data-md-color-primary="light-blue">Light Blue</button>
-<button data-md-color-primary="cyan">Cyan</button>
-<button data-md-color-primary="teal">Teal</button>
-<button data-md-color-primary="green">Green</button>
-<button data-md-color-primary="light-green">Light Green</button>
-<button data-md-color-primary="lime">Lime</button>
-<button data-md-color-primary="yellow">Yellow</button>
-<button data-md-color-primary="amber">Amber</button>
-<button data-md-color-primary="orange">Orange</button>
-<button data-md-color-primary="deep-orange">Deep Orange</button>
-<button data-md-color-primary="brown">Brown</button>
-<button data-md-color-primary="grey">Grey</button>
-<button data-md-color-primary="blue-grey">Blue Grey</button>
-
-<script>
-  var buttons = document.querySelectorAll("button[data-md-color-primary]");
-  Array.prototype.forEach.call(buttons, function(button) {
-    button.addEventListener("click", function() {
-      document.body.dataset.mdColorPrimary = this.dataset.mdColorPrimary;
-    })
-  })
-</script>
-
-#### Accent colors
-
-Click on a tile to change the accent color of the theme:
-
-<button data-md-color-accent="red">Red</button>
-<button data-md-color-accent="pink">Pink</button>
-<button data-md-color-accent="purple">Purple</button>
-<button data-md-color-accent="deep-purple">Deep Purple</button>
-<button data-md-color-accent="indigo">Indigo</button>
-<button data-md-color-accent="blue">Blue</button>
-<button data-md-color-accent="light-blue">Light Blue</button>
-<button data-md-color-accent="cyan">Cyan</button>
-<button data-md-color-accent="teal">Teal</button>
-<button data-md-color-accent="green">Green</button>
-<button data-md-color-accent="light-green">Light Green</button>
-<button data-md-color-accent="lime">Lime</button>
-<button data-md-color-accent="yellow">Yellow</button>
-<button data-md-color-accent="amber">Amber</button>
-<button data-md-color-accent="orange">Orange</button>
-<button data-md-color-accent="deep-orange">Deep Orange</button>
-
-<script>
-  var buttons = document.querySelectorAll("button[data-md-color-accent]");
-  Array.prototype.forEach.call(buttons, function(button) {
-    button.addEventListener("click", function() {
-      document.body.dataset.mdColorAccent = this.dataset.mdColorAccent;
-    })
-  })
-</script>
 
 ### Changing the font family
 
@@ -311,11 +173,11 @@ and the `link` must contain the URL you want to link to:
 extra:
   social:
     - type: 'github'
-      link: 'https://github.com/squidfunk'
+      link: 'https://github.com/Unidata'
     - type: 'twitter'
-      link: 'https://twitter.com/squidfunk'
-    - type: 'linkedin'
-      link: 'https://de.linkedin.com/in/martin-donath-20a95039'
+      link: 'https://twitter.com/Unidata'
+    - type: 'faceboook'
+      link: 'https://facebook.com/Unidata'
 ```
 
 The links are generated in order and the `type` of the links must match the
@@ -437,50 +299,78 @@ Material theme including more information regarding installation and usage:
 
 ## Full example
 
-Below is a full example configuration for a `mkdocs.yml`:
+Below is the full example configuration for this project's `mkdocs.yml`:
 
 ``` yaml
 # Project information
-site_name: 'My Project'
-site_description: 'A short description of my project'
-site_author: 'John Doe'
-site_url: 'https://my-github-handle.github.io/my-project'
-
+site_name: Unidata Material Design Theme
+site_description: A Custom Material Design Theme for MkDocs
+site_author: Michael James
+site_url: http://unidata.github.io/mkdocs-unidata/
+site_favicon: 'assets/images/favicon.ico'
 # Repository
-repo_name: 'my-github-handle/my-project'
-repo_url: 'https://github.com/my-github-handle/my-project'
+repo_name: Unidata/mkdocs-unidata
+repo_url: https://github.com/Unidata/mkdocs-unidata
 
-# Copyright
-copyright: 'Copyright &copy; 2016 - 2017 John Doe'
-
-# Documentation and theme
-theme: 'material'
+# Theme directory
+theme_dir: unidata
 
 # Options
 extra:
-  logo: 'images/logo.svg'
-  palette:
-    primary: 'indigo'
-    accent: 'indigo'
-  font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
+  corner_logo: 'images/corner_logo.png'
+  feature:
+    tabs: false
   social:
-    - type: 'github'
-      link: 'https://github.com/john-doe'
-    - type: 'twitter'
-      link: 'https://twitter.com/jonh-doe'
-    - type: 'linkedin'
-      link: 'https://de.linkedin.com/in/john-doe'
-
-# Google Analytics
-google_analytics:
-  - 'UA-XXXXXXXX-X'
-  - 'auto'
+    - type: globe
+      link: http://www.unidata.ucar.edu
+    - type: github-alt
+      link: https://github.com/Unidata
+    - type: twitter
+      link: https://twitter.com/Unidata
+    - type: facebook
+      link: https://facebook.com/Unidata
 
 # Extensions
 markdown_extensions:
-  - admonition
-  - codehilite(guess_lang=false)
-  - toc(permalink=true)
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite(guess_lang=false)
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc(permalink=true)
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
+
+# Page tree
+pages:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Extensions:
+    - Admonition: extensions/admonition.md
+    - CodeHilite: extensions/codehilite.md
+    - Footnotes: extensions/footnotes.md
+    - Metadata: extensions/metadata.md
+    - Permalinks: extensions/permalinks.md
+    - PyMdown: extensions/pymdown.md
+  - Specimen: specimen.md
+  - Customization: customization.md
+  - Release notes: release-notes.md
+  - Contributing: contributing.md
+  - License: license.md
+
+# Google Analytics
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - auto
 ```
