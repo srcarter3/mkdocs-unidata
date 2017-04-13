@@ -22,11 +22,11 @@
 site_name: Unidata Material Design Theme
 site_description: A Custom Material Design Theme for MkDocs
 site_author: Michael James
-site_url: http://unidata.github.io/mkdocs-unidata/
+site_url: http://mjames-upc.github.io/mkdocs-unidata/
 site_favicon: 'assets/images/favicon.ico'
 # Repository
-repo_name: Unidata/mkdocs-unidata
-repo_url: https://github.com/Unidata/mkdocs-unidata
+repo_name: mjames-upc/mkdocs-unidata
+repo_url: https://github.com/mjames-upc/mkdocs-unidata
 
 # Theme directory
 theme_dir: unidata
