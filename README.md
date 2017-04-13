@@ -1,39 +1,36 @@
 [![Travis][travis-image]][travis-link]
 [![Codacy][codacy-image]][codacy-link]
-[![Docker][docker-image]][docker-link]
 [![PyPI][pypi-image]][pypi-link]
 
-  [travis-image]: https://travis-ci.org/squidfunk/mkdocs-material.svg?branch=master
-  [travis-link]: https://travis-ci.org/squidfunk/mkdocs-material
+  [travis-image]: https://travis-ci.org/mjames-upc/mkdocs-unidata.svg?branch=master
+  [travis-link]: https://travis-ci.org/mjames-upc/mkdocs-unidata
   [codacy-image]: https://api.codacy.com/project/badge/Grade/fe07aa1fa91d453cb69711d3885c5d7e
-  [codacy-link]: https://www.codacy.com/app/squidfunk/mkdocs-material?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=squidfunk/mkdocs-material&amp;utm_campaign=Badge_Grade
-  [docker-image]: https://img.shields.io/docker/automated/squidfunk/mkdocs-material.svg
-  [docker-link]: https://hub.docker.com/r/squidfunk/mkdocs-material/
-  [pypi-image]: https://img.shields.io/pypi/v/mkdocs-material.svg
-  [pypi-link]: https://pypi.python.org/pypi/mkdocs-material
+  [codacy-link]: https://www.codacy.com/app/mjames/mkdocs-unidata?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=mjames/mkdocs-unidata&amp;utm_campaign=Badge_Grade
+  [pypi-image]: https://img.shields.io/pypi/v/mkdocs-unidata.svg
+  [pypi-link]: https://pypi.python.org/pypi/mkdocs-unidata
 
 # Material for MkDocs
 
 A Material Design theme for [MkDocs](http://www.mkdocs.org).
 
-[![Material for MkDocs](docs/images/material.png)](http://squidfunk.github.io/mkdocs-material/)
+[![Material for MkDocs](docs/images/material.png)](http://mjames-upc.github.io/mkdocs-unidata/)
 
 ## Quick start
 
 Install with `pip`:
 
 ``` sh
-pip install mkdocs-material
+pip install mkdocs-unidata
 ```
 
 Add the following line to your `mkdocs.yml`:
 
 ``` yaml
-theme: 'material'
+theme: 'unidata'
 ```
 
 For detailed installation instructions and a demo, visit
-http://squidfunk.github.io/mkdocs-material/
+http://mjames-upc.github.io/mkdocs-unidata/
 
 ## License
 
