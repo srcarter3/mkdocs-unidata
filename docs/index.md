@@ -1,6 +1,8 @@
-# Material <small>for MkDocs</small>
+# Unidata Material Design Theme
 
-## Beautiful project documentation
+Based on [github.com/squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)
+
+## Standardized project documentation
 
 Material is a theme for [MkDocs][1], an excellent static site generator geared
 towards project documentation. It is built using Google's [Material Design][2]
@@ -16,13 +18,13 @@ guidelines.
 Install the latest version of Material with `pip`:
 
 ``` sh
-pip install mkdocs-material
+pip install mkdocs-unidata
 ```
 
 Add the following line to your `mkdocs.yml`:
 
 ``` yaml
-theme: 'material'
+theme: 'unidata'
 ```
 
 For detailed instructions see the [getting started guide][3].

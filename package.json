@@ -1,26 +1,26 @@
 {
-  "name": "mkdocs-material",
+  "name": "mkdocs-unidata",
   "version": "1.5.4",
-  "description": "A Material Design theme for MkDocs",
+  "description": "Custom Material Design theme for MkDocs",
   "keywords": [
     "mkdocs",
     "documentation",
     "theme"
   ],
-  "homepage": "http://squidfunk.github.io/mkdocs-material/",
+  "homepage": "http://mjames-upc.github.io/mkdocs-unidata/",
   "bugs": {
-    "url": "https://github.com/squidfunk/mkdocs-material/issues",
-    "email": "martin.donath@squidfunk.com"
+    "url": "https://github.com/mjames-upc/mkdocs-unidata/issues",
+    "email": "mjames@ucar.edu"
   },
   "license": "MIT",
   "author": {
-    "name": "Martin Donath",
-    "email": "martin.donath@squidfunk.com"
+    "name": "Michael James",
+    "email": "mjames@ucar.edu"
   },
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/squidfunk/mkdocs-material.git"
+    "url": "https://github.com/mjames-upc/mkdocs-unidata.git"
   },
   "scripts": {
     "build": "scripts/build",

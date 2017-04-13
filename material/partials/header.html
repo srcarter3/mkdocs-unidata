@@ -24,7 +24,11 @@
                 </span>
               {% endfor %}
             {% endif %}
-            {{ page.title | default(config.site_name, true) }}
+            {% if page.title == "Home" %}
+              {{ config.site_name }}
+            {% else %}
+              {{ page.title }}
+            {% endif %}
           {% endblock %}
         </span>
       </div>
