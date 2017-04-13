@@ -35,7 +35,7 @@ import yargs from "yargs"
 const config = {
   assets: {
     src: "src/assets",                 /* Source directory for assets */
-    build: "material/assets"           /* Target directory for assets */
+    build: "unidata/assets"           /* Target directory for assets */
   },
   lib: "lib",                          /* Libraries and tasks */
   tests: {
@@ -43,7 +43,7 @@ const config = {
   },
   views: {
     src: "src",                        /* Source directory for views */
-    build: "material"                  /* Target directory for views */
+    build: "unidata"                  /* Target directory for views */
   }
 }
 

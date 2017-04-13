@@ -14,10 +14,14 @@ To determine the currently installed version, use the following command:
 
 ``` sh
 pip show mkdocs-unidata | grep -E ^Version
-# Version 1.5.4
+# Version 1.5.5
 ```
 
 ## Changelog
+
+### 1.5.5 <small> _ April 13, 2017</small>
+
+* Updates for pypi release conflict with mkdocs-material.
 
 ### 1.5.4 <small> _ April 13, 2017</small>
 
