@@ -787,7 +787,7 @@
         },
         {
             "location": "/release-notes/",
-            "text": "Release notes\n\u00b6\n\n\n\n\nThis project is based on \ngithub.com/squidfunk/mkdocs-material\n\n\n\n\nUpgrading\n\u00b6\n\n\nTo upgrade Material to the latest version, use pip:\n\n\npip install --upgrade mkdocs-unidata\n\n\n\n\n\nTo determine the currently installed version, use the following command:\n\n\npip show mkdocs-unidata \n|\n grep -E ^Version\n\n# Version 1.5.4\n\n\n\n\n\n\nChangelog\n\u00b6\n\n\n1.5.4 \n _ April 13, 2017\n\u00b6\n\n\n\n\nUsing Unidata color scheme.\n\n\nAdded corner logo support muted on small screens.\n\n\nShow site_name if page.title equals \"Home\"\n\n\nInitial release copied from \nhttps://github.com/squidfunk/mkdocs-material\n 1.5.4",
+            "text": "Release notes\n\u00b6\n\n\n\n\nThis project is based on \ngithub.com/squidfunk/mkdocs-material\n\n\n\n\nUpgrading\n\u00b6\n\n\nTo upgrade Material to the latest version, use pip:\n\n\npip install --upgrade mkdocs-unidata\n\n\n\n\n\nTo determine the currently installed version, use the following command:\n\n\npip show mkdocs-unidata \n|\n grep -E ^Version\n\n# Version 1.5.5\n\n\n\n\n\n\nChangelog\n\u00b6\n\n\n1.5.6 \n _ April 14, 2017\n\u00b6\n\n\n\n\nAlways base_url over config.site_url.\n\n\nCorner img base_url link.\n\n\n\n\n1.5.5 \n _ April 13, 2017\n\u00b6\n\n\n\n\nUpdates for pypi release conflict with mkdocs-material.\n\n\n\n\n1.5.4 \n _ April 13, 2017\n\u00b6\n\n\n\n\nUsing Unidata color scheme.\n\n\nAdded corner logo support muted on small screens.\n\n\nShow site_name if page.title equals \"Home\"\n\n\nInitial release copied from \nhttps://github.com/squidfunk/mkdocs-material\n 1.5.4",
             "title": "Release notes"
         },
         {
@@ -797,13 +797,23 @@
         },
         {
             "location": "/release-notes/#upgrading",
-            "text": "To upgrade Material to the latest version, use pip:  pip install --upgrade mkdocs-unidata  To determine the currently installed version, use the following command:  pip show mkdocs-unidata  |  grep -E ^Version # Version 1.5.4",
+            "text": "To upgrade Material to the latest version, use pip:  pip install --upgrade mkdocs-unidata  To determine the currently installed version, use the following command:  pip show mkdocs-unidata  |  grep -E ^Version # Version 1.5.5",
             "title": "Upgrading"
         },
         {
             "location": "/release-notes/#changelog",
             "text": "",
             "title": "Changelog"
+        },
+        {
+            "location": "/release-notes/#156-_-april-14-2017",
+            "text": "Always base_url over config.site_url.  Corner img base_url link.",
+            "title": "1.5.6  _ April 14, 2017"
+        },
+        {
+            "location": "/release-notes/#155-_-april-13-2017",
+            "text": "Updates for pypi release conflict with mkdocs-material.",
+            "title": "1.5.5  _ April 13, 2017"
         },
         {
             "location": "/release-notes/#154-_-april-13-2017",
