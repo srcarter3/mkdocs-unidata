@@ -1,6 +1,6 @@
 # Unidata Material Design Theme
 <small>
-> this project is based on [github.com/squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)
+> this project is based on [squidfunk.github.io/mkdocs-material](http://squidfunk.github.io/mkdocs-material/)
 </small>
 
 ---
