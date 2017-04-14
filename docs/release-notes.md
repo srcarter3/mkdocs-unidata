@@ -19,6 +19,11 @@ pip show mkdocs-unidata | grep -E ^Version
 
 ## Changelog
 
+### 1.5.6 <small> _ April 14, 2017</small>
+
+* Always base_url over config.site_url.
+* Corner img base_url link.
+
 ### 1.5.5 <small> _ April 13, 2017</small>
 
 * Updates for pypi release conflict with mkdocs-material.
