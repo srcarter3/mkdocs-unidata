@@ -20,18 +20,25 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           {% block site_name %}
-            {% if page %}
-              {% for parent in page.ancestors %}
-                <span class="md-header-nav__parent">
-                  {{ parent.title }}
-                </span>
-              {% endfor %}
-            {% endif %}
-            {% if page.title == "Home" %}
-              {{ config.site_name }}
-            {% else %}
-              {{ page.title }}
-            {% endif %}
+              {% if page %}
+
+                  {% for parent in page.ancestors %}
+                      <span class="md-header-nav__parent">
+                      {{ parent.title }}
+                      </span>
+                  {% endfor %}
+ 
+                  {% if page.title != "Home" %}
+                      {{ page.title }}
+                  {% else %}
+                      {{ config.site_name }}
+                  {% endif %}
+
+              {% else %}
+
+		  {{ config.site_name }}
+
+              {% endif %}
           {% endblock %}
         </span>
       </div>
