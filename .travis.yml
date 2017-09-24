@@ -48,10 +48,6 @@ install:
   - yarn install --ignore-optional
   - pip install --user -r requirements.txt
 
-<<<<<<< HEAD
 # Perform build and release
 script:
   - yarn run travis
-=======
-script: true
->>>>>>> remotes/unidata/master
