@@ -19,37 +19,32 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
-site_description: A Material Design theme for MkDocs
-site_author: Martin Donath
-site_url: http://squidfunk.github.io/mkdocs-material/
-
+site_name: Unidata Material Design Theme
+site_description: A Custom Material Design Theme for MkDocs
+site_author: Michael James
+site_url: http://mjames-upc.github.io/mkdocs-unidata/
+site_favicon: 'assets/images/favicon.ico'
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
-
-# Copyright
-copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
+repo_name: mjames-upc/mkdocs-unidata
+repo_url: https://github.com/mjames-upc/mkdocs-unidata
 
 # Theme directory
-theme_dir: material
+theme_dir: unidata
 
 # Options
 extra:
+  corner_logo: 'images/corner_logo.png'
   feature:
     tabs: false
-  palette:
-    primary: indigo
-    accent: indigo
   social:
     - type: globe
-      link: http://struct.cc
+      link: http://www.unidata.ucar.edu
     - type: github-alt
-      link: https://github.com/squidfunk
+      link: https://github.com/Unidata
     - type: twitter
-      link: https://twitter.com/squidfunk
-    - type: linkedin
-      link: https://linkedin.com/in/squidfunk
+      link: https://twitter.com/Unidata
+    - type: facebook
+      link: https://facebook.com/Unidata
 
 # Extensions
 markdown_extensions:
@@ -63,7 +58,6 @@ markdown_extensions:
   - pymdownx.betterem(smart_enable=all)
   - pymdownx.caret
   - pymdownx.critic
-  - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
@@ -76,8 +70,7 @@ markdown_extensions:
 
 # Page tree
 pages:
-  - Material: index.md
-  - Getting started: getting-started.md
+  - Home: index.md
   - Extensions:
     - Admonition: extensions/admonition.md
     - CodeHilite: extensions/codehilite.md
@@ -87,8 +80,6 @@ pages:
     - PyMdown: extensions/pymdown.md
   - Specimen: specimen.md
   - Customization: customization.md
-  - Release notes: release-notes.md
-  - Contributing: contributing.md
   - License: license.md
 
 # Google Analytics

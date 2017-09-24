@@ -1,5 +1,7 @@
 # Customization
 
+!!! note "This project is based on [github.com/squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material)"
+
 ## A great starting point
 
 Project documentation is as diverse as the projects themselves and the Material

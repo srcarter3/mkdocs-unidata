@@ -20,7 +20,7 @@
 
 * Python: `python --version`
 * MkDocs: `mkdocs --version`
-* Material: `pip show mkdocs-material | grep -E ^Version`
+* Material: `pip show mkdocs-unidata | grep -E ^Version`
 
 ### Project configuration
 

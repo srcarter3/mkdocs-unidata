@@ -1,0 +1,12 @@
+# Create full conda environment for development, including some useful tools
+name: mkdocs-unidata
+channels:
+  - conda-forge
+dependencies:
+  - python>=2.7
+  - mkdocs>=0.16
+  - pygments>=2.2
+  - pip
+  - pip:
+    - pymdown-extensions>=3.4
+    - fontawesome_markdown

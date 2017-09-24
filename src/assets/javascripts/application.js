@@ -147,7 +147,7 @@ function initialize(config) { // eslint-disable-line func-style
   }).listen()
 
   /* Component: header shadow toggle */
-  new Material.Event.MatchMedia("(min-width: 1220px)",
+  new Material.Event.MatchMedia("(min-width: 1300px)",
     new Material.Event.Listener(window, [
       "scroll", "resize", "orientationchange"
     ], new Material.Header.Shadow(
@@ -161,7 +161,7 @@ function initialize(config) { // eslint-disable-line func-style
     ], new Material.Tabs.Toggle("[data-md-component=tabs]")).listen()
 
   /* Component: sidebar with navigation */
-  new Material.Event.MatchMedia("(min-width: 1220px)",
+  new Material.Event.MatchMedia("(min-width: 1300px)",
     new Material.Event.Listener(window, [
       "scroll", "resize", "orientationchange"
     ], new Material.Sidebar.Position(
@@ -186,13 +186,13 @@ function initialize(config) { // eslint-disable-line func-style
   const collapsibles =
     document.querySelectorAll("[data-md-component=collapsible]")
   Array.prototype.forEach.call(collapsibles, collapse => {
-    new Material.Event.MatchMedia("(min-width: 1220px)",
+    new Material.Event.MatchMedia("(min-width: 1300px)",
       new Material.Event.Listener(collapse.previousElementSibling, "click",
         new Material.Nav.Collapse(collapse)))
   })
 
   /* Component: active pane monitor for iOS scrolling fixes */
-  new Material.Event.MatchMedia("(max-width: 1219px)",
+  new Material.Event.MatchMedia("(max-width: 1299px)",
     new Material.Event.Listener(
       "[data-md-component=navigation] [data-md-toggle]", "change",
       new Material.Nav.Scrolling("[data-md-component=navigation] nav")))

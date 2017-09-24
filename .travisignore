@@ -1,8 +1,7 @@
 .github/*
-material/*
+unidata/*
 .editorconfig
 .gitignore
-CHANGELOG
 LICENSE
 *.md
 git

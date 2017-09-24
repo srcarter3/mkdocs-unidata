@@ -54,6 +54,7 @@
       <!-- Header title -->
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
+{{ page.canonical_url}}
           {% block site_name %}
             {% if page %}
               {% for parent in page.ancestors %}
@@ -62,7 +63,11 @@
                 </span>
               {% endfor %}
             {% endif %}
-            {{ page.title | default(config.site_name, true) }}
+            {% if page.title == "Home" %}
+              {{ config.site_name }}
+            {% else %}
+              {{ page.title }}
+            {% endif %}
           {% endblock %}
         </span>
       </div>

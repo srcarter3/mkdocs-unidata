@@ -27,8 +27,6 @@ sudo: false
 
 # Node.js version and necessary services
 node_js: 5
-services:
-  - docker
 
 # Limit clone depth to 5, to speed up build
 git:
@@ -50,6 +48,10 @@ install:
   - yarn install --ignore-optional
   - pip install --user -r requirements.txt
 
+<<<<<<< HEAD
 # Perform build and release
 script:
   - yarn run travis
+=======
+script: true
+>>>>>>> remotes/unidata/master
