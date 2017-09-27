@@ -15,7 +15,6 @@ if [[ $INSTALL_VERSION == $PACKAGE_VERSION ]]; then
   then
     $(sed -i '' -e 's/'$INSTALL_VERSION'/'$next_release'/' package.json)
   fi
-
   exit
 fi
 
@@ -24,13 +23,7 @@ fi
 echo "$INSTALL_VERSION is installed"
 echo "$PACKAGE_VERSION to be released"
 
-exit
-
 rm -rf dist/mkdocs*unidata-$PACKAGE_VERSION.*
 python setup.py sdist bdist_wheel
 
-for file in `ls dist |grep $PACKAGE_VERSION`
-do
-  twine register dist/$file
-  twine upload dist/$file
-done
+twine upload dist/*
