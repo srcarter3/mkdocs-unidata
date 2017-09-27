@@ -12,7 +12,7 @@
         <link rel="canonical" href="http://mjames-upc.github.io/mkdocs-unidata/extensions/metadata/">
       
       
-        <meta name="author" content="Michael James">
+        <meta name="author" content="mjames@ucar.edu">
       
       
         <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -70,7 +70,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="../.." title="Unidata Material Design Theme" class="md-icon md-icon--home md-header-nav__button">
+          <a href="../.." title="Unidata Material Design Theme" class="md-header-nav__button">
           </a>
         
       </div>
@@ -80,16 +80,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           
-            
               
-                <span class="md-header-nav__parent">
-                  Extensions
-                </span>
+
+                  
+                      <span class="md-header-nav__parent">
+                      Extensions
+                      </span>
+                  
+ 
+                  
+                      Metadata
+                  
+
               
-            
-            
-              Metadata
-            
           
         </span>
       </div>
@@ -97,17 +100,17 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
-  <div class="md-search__overlay"></div>
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -160,9 +163,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
     Unidata Material Design Theme
   </label>
   
@@ -206,30 +211,18 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../../getting-started/" title="Getting started" class="md-nav__link">
-      Getting started
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Extensions
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         Extensions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -418,30 +411,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/" title="Release notes" class="md-nav__link">
-      Release notes
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../contributing/" title="Contributing" class="md-nav__link">
-      Contributing
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="../../license/" title="License" class="md-nav__link">
       License
     </a>
@@ -539,7 +508,6 @@ which gives more control over the theme in a page-specific context.</p>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">meta</span>
 </pre></div>
 
-
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>Metadata is written as a series of key-value pairs at the beginning of the
 Markdown document, delimited by a blank line which ends the metadata context.
@@ -556,13 +524,11 @@ source: file.js
 ...
 </pre></div>
 
-
 <p>See the next section which covers the metadata that is supported by Material.</p>
 <h3 id="overriding-the-title">Overriding the title<a class="headerlink" href="#overriding-the-title" title="Permanent link">&para;</a></h3>
 <p>The page title can be overridden on a per-document level:</p>
 <div class="codehilite"><pre><span></span>title: Lorem ipsum dolor sit amet
 </pre></div>
-
 
 <p>This will set the <code>title</code> tag inside the document <code>head</code> for the current page
 to the provided value. It will also override the default behavior of Material
@@ -573,7 +539,6 @@ title.</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">description</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Nullam urna elit, malesuada eget finibus ut, ac tortor.</span>
 </pre></div>
 
-
 <p>This will set the <code>meta</code> tag containing the site description inside the
 document <code>head</code> for the current page to the provided value.</p>
 <h3 id="linking-sources">Linking sources<a class="headerlink" href="#linking-sources" title="Permanent link">&para;</a></h3>
@@ -583,7 +548,6 @@ is defined inside the project's <code>mkdocs.yml</code>, the files can be linked
 <div class="codehilite"><pre><span></span>source: file.js
 </pre></div>
 
-
 <p>A new entry at the bottom of the table of contents is generated that is linking
 to the section listing the linked source files. Multiple files can be linked by
 adding filenames on separate lines:</p>
@@ -591,14 +555,12 @@ adding filenames on separate lines:</p>
         file.css
 </pre></div>
 
-
 <p>The filenames are appended to the <code>repo_url</code> set in your <code>mkdocs.yml</code>, but can
 be prefixed with a <code>path</code> to ensure correct path resolving:</p>
 <p>Example:</p>
 <div class="codehilite"><pre><span></span>path: tree/master/docs/extensions
 source: metadata.md
 </pre></div>
-
 
 <p>Result:</p>
 <p>See the <a href="#__source">source</a> section for the resulting output.</p>

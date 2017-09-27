@@ -12,7 +12,7 @@
         <link rel="canonical" href="http://mjames-upc.github.io/mkdocs-unidata/">
       
       
-        <meta name="author" content="Michael James">
+        <meta name="author" content="mjames@ucar.edu">
       
       
         <link rel="shortcut icon" href="./assets/images/favicon.ico">
@@ -70,7 +70,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="." title="Unidata Material Design Theme" class="md-icon md-icon--home md-header-nav__button">
+          <a href="." title="Unidata Material Design Theme" class="md-header-nav__button">
           </a>
         
       </div>
@@ -80,12 +80,15 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           
-            
               
-            
-            
-              Unidata Material Design Theme
-            
+
+                  
+ 
+                  
+                      Unidata Material Design Theme
+                  
+
+              
           
         </span>
       </div>
@@ -93,17 +96,17 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
-  <div class="md-search__overlay"></div>
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -156,9 +159,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
     Unidata Material Design Theme
   </label>
   
@@ -219,8 +224,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#standardized-project-documentation" title="Standardized project documentation" class="md-nav__link">
-    Standardized project documentation
+  <a href="#beautiful-project-documentation" title="Beautiful project documentation" class="md-nav__link">
+    Beautiful project documentation
   </a>
   
 </li>
@@ -228,6 +233,13 @@
         <li class="md-nav__item">
   <a href="#quick-start" title="Quick start" class="md-nav__link">
     Quick start
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-expect" title="What to expect" class="md-nav__link">
+    What to expect
   </a>
   
 </li>
@@ -273,27 +285,15 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="getting-started/" title="Getting started" class="md-nav__link">
-      Getting started
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Extensions
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         Extensions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -406,30 +406,6 @@
 
 
   <li class="md-nav__item">
-    <a href="release-notes/" title="Release notes" class="md-nav__link">
-      Release notes
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="contributing/" title="Contributing" class="md-nav__link">
-      Contributing
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="license/" title="License" class="md-nav__link">
       License
     </a>
@@ -457,8 +433,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#standardized-project-documentation" title="Standardized project documentation" class="md-nav__link">
-    Standardized project documentation
+  <a href="#beautiful-project-documentation" title="Beautiful project documentation" class="md-nav__link">
+    Beautiful project documentation
   </a>
   
 </li>
@@ -466,6 +442,13 @@
         <li class="md-nav__item">
   <a href="#quick-start" title="Quick start" class="md-nav__link">
     Quick start
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-to-expect" title="What to expect" class="md-nav__link">
+    What to expect
   </a>
   
 </li>
@@ -513,14 +496,11 @@
                 
                 
                 <h1 id="unidata-material-design-theme">Unidata Material Design Theme<a class="headerlink" href="#unidata-material-design-theme" title="Permanent link">&para;</a></h1>
-<p><small></p>
 <blockquote>
-<p>this project is based on <a href="http://squidfunk.github.io/mkdocs-material/">squidfunk.github.io/mkdocs-material</a>
-</small></p>
+<p><small>This project is based on <a href="https://github.com/squidfunk/mkdocs-material">github.com/squidfunk/mkdocs-material</a></small></p>
 </blockquote>
-<hr />
-<h2 id="standardized-project-documentation">Standardized project documentation<a class="headerlink" href="#standardized-project-documentation" title="Permanent link">&para;</a></h2>
-<p>Material is a theme for <a href="http://www.mkdocs.org">MkDocs</a>, a static site generator geared
+<h2 id="beautiful-project-documentation">Beautiful project documentation<a class="headerlink" href="#beautiful-project-documentation" title="Permanent link">&para;</a></h2>
+<p>Material is a theme for <a href="http://www.mkdocs.org">MkDocs</a>, an excellent static site generator geared
 towards project documentation. It is built using Google's <a href="https://www.google.com/design/spec/material-design">Material Design</a>
 guidelines.</p>
 <p><a href="./images/material.png"><img alt="Material for MkDocs" src="./images/material.png" /></a></p>
@@ -530,26 +510,39 @@ guidelines.</p>
 <div class="codehilite"><pre><span></span>pip install mkdocs-unidata
 </pre></div>
 
-
-<p>Add the following line to your <code>mkdocs.yml</code>:</p>
+<p>Append the following line to your project's <code>mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span> <span class="s">&#39;unidata&#39;</span>
 </pre></div>
 
-
-<p>If you cloned Material from GitHub:</p>
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme_dir</span><span class="p p-Indicator">:</span> <span class="s">&#39;mkdocs-unidata/unidata&#39;</span>
+<p>Then run the following commands (create and source the python environment for running mkdocs locally)</p>
+<div class="codehilite"><pre><span></span>conda env create -f environment.yml
+<span class="nb">source</span> activate mkdocs-unidata
 </pre></div>
 
-
-<p>MkDocs includes a development server, so you can review your changes as you go.
-The development server can be started with the following command:</p>
+<p>Finally, serve the docs locally with the command</p>
 <div class="codehilite"><pre><span></span>mkdocs serve
 </pre></div>
 
-
-<p>Now you can point your browser to <a href="http://localhost:8000">localhost:8000</a> and the Material theme
-should be visible. From here on, you can start writing your documentation, or
-read on and customize the theme through some options.</p>
+<p>and then load the page locally at <a href="http://127.0.0.1:8000"><a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a></a></p>
+<hr />
+<h2 id="what-to-expect">What to expect<a class="headerlink" href="#what-to-expect" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Responsive design and fluid layout for all kinds of screens and devices,
+  designed to serve your project documentation in a user-friendly way with
+  optimal readability.</p>
+</li>
+<li>
+<p>Easily customizable primary and accent color, fonts, favicon and logo;
+  straight forward localization through theme extension; integrated with Google
+  Analytics, Disqus and GitHub.</p>
+</li>
+<li>
+<p>Well-designed search interface accessible through hotkeys (<kbd>F</kbd> or
+  <kbd>S</kbd>), intelligent grouping of search results, search term
+  highlighting and lazy loading.</p>
+</li>
+</ul>
 <hr />
 <h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
 <p>The Unidata Material theme adds extra variables for configuration via your
@@ -562,9 +555,7 @@ project's <code>mkdocs.yml</code> on top of what <a href="http://squidfunk.githu
   <span class="l l-Scalar l-Scalar-Plain">corner_logo</span><span class="p p-Indicator">:</span> <span class="s">&#39;images/corner_logo.png&#39;</span>
 </pre></div>
 
-
 <p>where the file exists in your repo as <code>docs/images/corner_logo.png</code>.</p>
-<p>For detailed instructions see the <a href="getting-started/">getting started guide</a>.</p>
                 
                   
                 
@@ -584,13 +575,13 @@ project's <code>mkdocs.yml</code> on top of what <a href="http://squidfunk.githu
       <nav class="md-footer-nav__inner md-grid">
         
         
-          <a href="getting-started/" title="Getting started" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="extensions/admonition/" title="Admonition" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Getting started
+                Admonition
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

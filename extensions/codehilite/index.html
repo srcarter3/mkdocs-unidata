@@ -12,7 +12,7 @@
         <link rel="canonical" href="http://mjames-upc.github.io/mkdocs-unidata/extensions/codehilite/">
       
       
-        <meta name="author" content="Michael James">
+        <meta name="author" content="mjames@ucar.edu">
       
       
         <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -70,7 +70,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href="../.." title="Unidata Material Design Theme" class="md-icon md-icon--home md-header-nav__button">
+          <a href="../.." title="Unidata Material Design Theme" class="md-header-nav__button">
           </a>
         
       </div>
@@ -80,16 +80,19 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           
-            
               
-                <span class="md-header-nav__parent">
-                  Extensions
-                </span>
+
+                  
+                      <span class="md-header-nav__parent">
+                      Extensions
+                      </span>
+                  
+ 
+                  
+                      CodeHilite
+                  
+
               
-            
-            
-              CodeHilite
-            
           
         </span>
       </div>
@@ -97,17 +100,17 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
-  <div class="md-search__overlay"></div>
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -160,9 +163,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
     Unidata Material Design Theme
   </label>
   
@@ -206,30 +211,18 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href="../../getting-started/" title="Getting started" class="md-nav__link">
-      Getting started
-    </a>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Extensions
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         Extensions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -613,30 +606,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/" title="Release notes" class="md-nav__link">
-      Release notes
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../contributing/" title="Contributing" class="md-nav__link">
-      Contributing
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="../../license/" title="License" class="md-nav__link">
       License
     </a>
@@ -938,12 +907,10 @@ be installed with the following command:</p>
 <div class="codehilite"><pre><span></span>pip install pygments
 </pre></div>
 
-
 <p>To enable CodeHilite, add the following lines to your <code>mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">markdown_extensions</span><span class="p p-Indicator">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite</span>
 </pre></div>
-
 
 <div class="admonition warning">
 <p class="admonition-title">Migrating from Material 0.2.x</p>
@@ -968,11 +935,9 @@ import tensorflow as tf
 ```
 </pre></div>
 
-
 <p>Result:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
 </pre></div>
-
 
 <h4 id="via-shebang">via Shebang<a class="headerlink" href="#via-shebang" title="Permanent link">&para;</a></h4>
 <p>Alternatively, if the first line of a code block contains a shebang, the
@@ -984,12 +949,10 @@ encapsulated in three backticks.</p>
     import tensorflow as tf
 </pre></div>
 
-
 <p>Result:</p>
 <div class="codehilite"><pre><span></span><span class="ch">#!/usr/bin/python</span>
 <span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
 </pre></div>
-
 
 <h4 id="via-three-colons">via three colons<a class="headerlink" href="#via-three-colons" title="Permanent link">&para;</a></h4>
 <p>If the first line starts with three colons followed by a language identifier,
@@ -999,7 +962,6 @@ indented using four spaces, not for those encapsulated in three backticks.</p>
 <div class="codehilite"><pre><span></span>    :::python
     import tensorflow as tf
 </pre></div>
-
 
 <p>Result:</p>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
@@ -1012,7 +974,6 @@ indented using four spaces, not for those encapsulated in three backticks.</p>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite(linenums=true)</span>
 </pre></div>
 
-
 <p>Example:</p>
 <div class="codehilite"><pre><span></span>``` python
 &quot;&quot;&quot; Bubble sort &quot;&quot;&quot;
@@ -1023,7 +984,6 @@ def bubble_sort(items):
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
 </pre></div>
-
 
 <p>Result:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -1053,7 +1013,6 @@ def bubble_sort(items):
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
 </pre></div>
-
 
 <p>Result:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -1110,7 +1069,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="nb">exit</span> <span class="nv">$?</span>
 </pre></div>
 
-
 <h3 id="c">C<a class="headerlink" href="#c" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="k">extern</span> <span class="kt">size_t</span>
 <span class="nf">pb_varint_scan</span><span class="p">(</span><span class="k">const</span> <span class="kt">uint8_t</span> <span class="n">data</span><span class="p">[],</span> <span class="kt">size_t</span> <span class="n">left</span><span class="p">)</span> <span class="p">{</span>
@@ -1151,7 +1109,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="p">}</span>
 </pre></div>
 
-
 <h3 id="c_1">C++<a class="headerlink" href="#c_1" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="n">Extension</span><span class="o">::</span>
 <span class="n">Extension</span><span class="p">(</span><span class="k">const</span> <span class="n">Descriptor</span> <span class="o">*</span><span class="n">descriptor</span><span class="p">,</span> <span class="k">const</span> <span class="n">Descriptor</span> <span class="o">*</span><span class="n">scope</span><span class="p">)</span> <span class="o">:</span>
@@ -1188,7 +1145,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="p">}</span>
 </pre></div>
 
-
 <h3 id="c_2">C&#35;<a class="headerlink" href="#c_2" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Send</span><span class="p">(</span>
     <span class="n">Socket</span> <span class="n">socket</span><span class="p">,</span> <span class="kt">byte</span><span class="p">[]</span> <span class="n">buffer</span><span class="p">,</span> <span class="kt">int</span> <span class="n">offset</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="kt">int</span> <span class="n">timeout</span><span class="p">)</span> <span class="p">{</span>
@@ -1213,7 +1169,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
   <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">sent</span> <span class="p">&lt;</span> <span class="n">size</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
-
 
 <h3 id="clojure">Clojure<a class="headerlink" href="#clojure" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="p">(</span><span class="nf">clojure-version</span><span class="p">)</span>
@@ -1252,7 +1207,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
           <span class="p">[</span><span class="s">&quot;1d&quot;</span> <span class="s">&quot;33&quot;</span> <span class="s">&quot;&gt;&gt; 1&quot;</span> <span class="s">&quot;&gt;&gt; 2&quot;</span> <span class="s">&quot;22&quot;</span> <span class="s">&quot;&gt;&gt; 3&quot;</span><span class="p">])</span>
 </pre></div>
 
-
 <h3 id="diff">Diff<a class="headerlink" href="#diff" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="gh">Index: grunt.js</span>
 <span class="gh">===================================================================</span>
@@ -1279,7 +1233,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
          &#39;packages/web/server/**/*.js&#39;,
 </pre></div>
 
-
 <h3 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="k">FROM</span><span class="s"> ubuntu</span>
 
@@ -1296,7 +1249,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="k">EXPOSE</span><span class="s"> 5900</span>
 <span class="k">CMD</span><span class="s"> [&quot;x11vnc&quot;, &quot;-forever&quot;, &quot;-usepw&quot;, &quot;-create&quot;]</span>
 </pre></div>
-
 
 <h3 id="elixir">Elixir<a class="headerlink" href="#elixir" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="kn">require</span> <span class="nc">Logger</span>
@@ -1332,7 +1284,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="k">end</span>
 </pre></div>
 
-
 <h3 id="erlang">Erlang<a class="headerlink" href="#erlang" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="nf">circular</span><span class="p">(</span><span class="nv">Defs</span><span class="p">)</span> <span class="o">-&gt;</span>
   <span class="p">[</span> <span class="p">{</span> <span class="p">{</span> <span class="nv">Type</span><span class="p">,</span> <span class="nv">Base</span> <span class="p">},</span> <span class="nv">Fields</span> <span class="p">}</span> <span class="p">||</span>
@@ -1363,7 +1314,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
   <span class="k">end</span><span class="p">.</span>
 </pre></div>
 
-
 <h3 id="f">F&#35;<a class="headerlink" href="#f" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="sd">/// Asynchronously download retangles from the server</span>
 <span class="sd">/// and decode the JSON format to F# Rectangle record</span>
@@ -1381,7 +1331,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
     <span class="n">cleanRectangles</span><span class="bp">()</span>
     <span class="n">rects</span> <span class="o">|&gt;</span> <span class="nn">Array</span><span class="p">.</span><span class="n">iter</span> <span class="n">createRectangle</span> <span class="o">}</span>
 </pre></div>
-
 
 <h3 id="go">Go<a class="headerlink" href="#go" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
@@ -1413,7 +1362,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="p">}</span>
 </pre></div>
 
-
 <h3 id="html">HTML<a class="headerlink" href="#html" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="cp">&lt;!doctype html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;no-js&quot;</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>
@@ -1434,7 +1382,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
   <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
-
 
 <h3 id="java">Java<a class="headerlink" href="#java" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.LinkedList</span><span class="o">;</span>
@@ -1482,7 +1429,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="o">}</span>
 </pre></div>
 
-
 <h3 id="javascript">JavaScript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nb">Math</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;lib/math&#39;</span><span class="p">);</span>
 
@@ -1505,7 +1451,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">_extends</span><span class="p">(</span><span class="nx">exports</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">],</span> <span class="nx">exports</span><span class="p">);</span>
 </pre></div>
 
-
 <h3 id="json">JSON<a class="headerlink" href="#json" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;mkdocs-material&quot;</span><span class="p">,</span>
@@ -1524,7 +1469,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
   <span class="err">...</span>
 <span class="p">}</span>
 </pre></div>
-
 
 <h3 id="julia">Julia<a class="headerlink" href="#julia" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="k">using</span> <span class="n">MXNet</span>
@@ -1552,7 +1496,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="n">mx</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">train_provider</span><span class="p">,</span> <span class="n">n_epoch</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">eval_data</span><span class="o">=</span><span class="n">eval_provider</span><span class="p">)</span>
 </pre></div>
 
-
 <h3 id="lua">Lua<a class="headerlink" href="#lua" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ffi</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;ffi&quot;</span><span class="p">)</span>
 
@@ -1579,7 +1522,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="nb">io.write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 
-
 <h3 id="mysql">MySQL<a class="headerlink" href="#mysql" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="k">SELECT</span>
   <span class="n">Employees</span><span class="p">.</span><span class="n">EmployeeID</span><span class="p">,</span>
@@ -1595,7 +1537,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="k">WHERE</span>
   <span class="n">Employees</span><span class="p">.</span><span class="n">EmployeeID</span> <span class="o">=</span> <span class="s1">&#39;087652&#39;</span><span class="p">;</span>
 </pre></div>
-
 
 <h3 id="php">PHP<a class="headerlink" href="#php" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
@@ -1621,7 +1562,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="p">}</span>
 </pre></div>
 
-
 <h3 id="protocol-buffers">Protocol Buffers<a class="headerlink" href="#protocol-buffers" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="na">syntax</span> <span class="o">=</span> <span class="s">&quot;proto2&quot;</span><span class="p">;</span>
 
@@ -1644,7 +1584,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
   <span class="k">optional</span> <span class="kt">int32</span> <span class="na">width</span> <span class="o">=</span> <span class="mi">4</span> <span class="p">[</span><span class="k">default</span> <span class="o">=</span> <span class="mi">0</span><span class="p">];</span>
 <span class="p">}</span>
 </pre></div>
-
 
 <h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -1675,7 +1614,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
 <span class="n">b</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">10</span><span class="p">]))</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">W</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
 </pre></div>
-
 
 <h3 id="ruby">Ruby<a class="headerlink" href="#ruby" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;finity/event&#39;</span>
@@ -1715,7 +1653,6 @@ over <a href="https://hub.docker.com/r/squidfunk/mkdocs-material/">300 languages
   <span class="k">end</span>
 <span class="k">end</span>
 </pre></div>
-
 
 <h3 id="xml">XML<a class="headerlink" href="#xml" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>

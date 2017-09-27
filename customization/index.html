@@ -12,7 +12,7 @@
         <link rel="canonical" href="http://mjames-upc.github.io/mkdocs-unidata/customization/">
       
       
-        <meta name="author" content="Michael James">
+        <meta name="author" content="mjames@ucar.edu">
       
       
         <link rel="shortcut icon" href="../assets/images/favicon.ico">
@@ -70,7 +70,7 @@
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
         
-          <a href=".." title="Unidata Material Design Theme" class="md-icon md-icon--home md-header-nav__button">
+          <a href=".." title="Unidata Material Design Theme" class="md-header-nav__button">
           </a>
         
       </div>
@@ -80,12 +80,15 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           
-            
               
-            
-            
-              Customization
-            
+
+                  
+ 
+                  
+                      Customization
+                  
+
+              
           
         </span>
       </div>
@@ -93,17 +96,17 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
-  <div class="md-search__overlay"></div>
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -156,9 +159,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
     Unidata Material Design Theme
   </label>
   
@@ -203,27 +208,15 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../getting-started/" title="Getting started" class="md-nav__link">
-      Getting started
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-2">
       Extensions
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         Extensions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -467,30 +460,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../release-notes/" title="Release notes" class="md-nav__link">
-      Release notes
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../contributing/" title="Contributing" class="md-nav__link">
-      Contributing
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="../license/" title="License" class="md-nav__link">
       License
     </a>
@@ -655,12 +624,10 @@ new stylesheet file in your <code>docs</code> directory:</p>
 touch docs/stylesheets/extra.css
 </pre></div>
 
-
 <p>Then, add the following line to your <code>mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra_css</span><span class="p p-Indicator">:</span>
   <span class="p p-Indicator">-</span> <span class="s">&#39;stylesheets/extra.css&#39;</span>
 </pre></div>
-
 
 <p>Spin up the development server with <code>mkdocs serve</code> and start typing your
 changes in your additional stylesheet file – you can see them instantly after
@@ -673,12 +640,10 @@ JavaScript file in your <code>docs</code> directory:</p>
 touch docs/javascripts/extra.js
 </pre></div>
 
-
 <p>Then, add the following line to your <code>mkdocs.yml</code>:</p>
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">extra_javascript</span><span class="p p-Indicator">:</span>
   <span class="p p-Indicator">-</span> <span class="s">&#39;javascripts/extra.js&#39;</span>
 </pre></div>
-
 
 <p>Further assistance can be found in the <a href="http://www.mkdocs.org/user-guide/styling-your-docs/#customizing-a-theme">MkDocs documentation</a>.</p>
 <h2 id="extending-the-theme">Extending the theme<a class="headerlink" href="#extending-the-theme" title="Permanent link">&para;</a></h2>
@@ -692,7 +657,6 @@ new folder for overrides, e.g. <code>theme</code>, which you reference using <co
 <div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">theme</span><span class="p p-Indicator">:</span> <span class="s">&#39;material&#39;</span>
 <span class="l l-Scalar l-Scalar-Plain">theme_dir</span><span class="p p-Indicator">:</span> <span class="s">&#39;theme&#39;</span>
 </pre></div>
-
 
 <div class="admonition warning">
 <p class="admonition-title">Theme extension prerequisites</p>
@@ -729,7 +693,6 @@ may also be put in the theme directory.</p>
 └─ main.html                           <span class="c1"># Default page</span>
 </pre></div>
 
-
 <h3 id="overriding-partials">Overriding partials<a class="headerlink" href="#overriding-partials" title="Permanent link">&para;</a></h3>
 <p>In order to override the footer, we can replace the <code>footer.html</code> partial with
 our own partial. To do this, create the file <code>partials/footer.html</code> in the
@@ -746,7 +709,6 @@ define the block, e.g.:</p>
 <span class="x">  &lt;title&gt;Lorem ipsum dolor sit amet&lt;/title&gt;</span>
 <span class="cp">{%</span> <span class="k">endblock</span> <span class="cp">%}</span><span class="x"></span>
 </pre></div>
-
 
 <p>The Material theme provides the following template blocks:</p>
 <table>
@@ -844,20 +806,17 @@ better version of <code>npm</code>. First, clone the repository:</p>
 <div class="codehilite"><pre><span></span>git clone https://github.com/squidfunk/mkdocs-material
 </pre></div>
 
-
 <p>Next, all dependencies need to be installed, which is done with:</p>
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> mkdocs-material
 pip install -r requirements.txt
 yarn install
 </pre></div>
 
-
 <h3 id="development-mode">Development mode<a class="headerlink" href="#development-mode" title="Permanent link">&para;</a></h3>
 <p>The Material theme uses a sophisticated asset pipeline using <a href="http://gulpjs.com">Gulp</a> and
 Webpack which can be started with the following command:</p>
 <div class="codehilite"><pre><span></span>yarn start
 </pre></div>
-
 
 <p>This will also start the MkDocs development server which will monitor changes
 on assets, templates and documentation. Point your browser to
@@ -869,7 +828,6 @@ on assets, templates and documentation. Point your browser to
 <span class="o">$</span><span class="nt">md-color-accent</span><span class="o">:</span>  <span class="o">$</span><span class="nt">clr-teal-a700</span><span class="o">;</span>
 </pre></div>
 
-
 <div class="admonition warning">
 <p class="admonition-title">Automatically generated files</p>
 <p>Never make any changes in the <code>material</code> directory, as the contents of this
@@ -880,7 +838,6 @@ overriden when the theme is built.</p>
 <p>When you've finished making your changes, you can build the theme by invoking:</p>
 <div class="codehilite"><pre><span></span>yarn run build
 </pre></div>
-
 
 <p>This triggers the production-level compilation and minification of all
 stylesheets and JavaScript sources. When the command exits, the final theme is
@@ -921,13 +878,13 @@ changes to the original Material theme.</p>
           </a>
         
         
-          <a href="../release-notes/" title="Release notes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../license/" title="License" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Release notes
+                License
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
