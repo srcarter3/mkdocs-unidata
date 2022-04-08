@@ -1,4 +1,4 @@
-recursive-include unidata *.ico *.js *.css *.html *.svg
+recursive-include unidata *.ico *.js *.css *.html *.svg *.yml
 recursive-exclude site *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
