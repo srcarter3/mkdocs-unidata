@@ -1,18 +1,22 @@
 <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    {% if config.extra.corner_logo %}
-      <a href="{{ base_url }}"><div class="background-logo" style="background-image: url({{ base_url }}/{{ config.extra.corner_logo }});"></div>
+  {% if config.extra.corner_logo %}
+    <a href="{{ base_url }}">
+      <div class="background-logo" style="background-image:url('{{ base_url }}/{{ config.extra.corner_logo }}');background-repeat:no-repeat;height:107px">
     {% endif %}
+  <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        {% if config.extra.logo %}
-          <a href="{{ base_url }}" title="{{ config.site_name }}" class="md-logo md-header-nav__button">
-            <img src="{{ base_url }}/{{ config.extra.logo }}" width="36" height="36">
-          </a>
-        {% else %}
-          <a href="{{ base_url }}" title="{{ config.site_name }}" class="md-header-nav__button">
-          </a>
-        {% endif %}
+        <a href="{{ config.site_url | default(nav.homepage.url, true) }}" title="{{ config.site_name }}" class="md-header-nav__button md-logo">
+          {% if config.extra.logo %}
+            {% if config.extra.logo.icon %}
+              <i class="md-icon">{{ config.extra.logo.icon }}</i>
+            {% else %}
+              <img src="{{ base_url }}/{{ config.extra.logo }}" width="24" height="24">
+            {% endif %}
+          {% else %}
+            <i class="md-icon md-icon--home"></i>
+          {% endif %}
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
@@ -20,25 +24,18 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
           {% block site_name %}
-              {% if page %}
-
-                  {% for parent in page.ancestors %}
-                      <span class="md-header-nav__parent">
-                      {{ parent.title }}
-                      </span>
-                  {% endfor %}
- 
-                  {% if page.title != "Home" %}
-                      {{ page.title }}
-                  {% else %}
-                      {{ config.site_name }}
-                  {% endif %}
-
-              {% else %}
-
-                  {{ config.site_name }}
-
-              {% endif %}
+            {% if page %}
+              {% for parent in page.ancestors %}
+                <span class="md-header-nav__parent">
+                  {{ parent.title }}
+                </span>
+              {% endfor %}
+            {% endif %}
+            {% if page.title == "Home" %}
+              {{ config.site_name }}
+            {% else %}
+              {{ page.title }}
+            {% endif %}
           {% endblock %}
         </span>
       </div>
@@ -48,13 +45,13 @@
           {% include "partials/search.html" %}
         {% endblock %}
       </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <div class="md-header-nav__source">
-          {% if config.repo_url %}
+      {% if config.repo_url %}
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
             {% include "partials/source.html" %}
-          {% endif %}
+          </div>
         </div>
-      </div>
+      {% endif %}
     </div>
   </nav>
 </header>
