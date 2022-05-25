@@ -1,6 +1,6 @@
 {
   "name": "mkdocs-unidata",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Custom Material Design theme for MkDocs",
   "keywords": [
     "mkdocs",
@@ -9,18 +9,18 @@
   ],
   "homepage": "http://mjames-upc.github.io/mkdocs-unidata/",
   "bugs": {
-    "url": "https://github.com/mjames-upc/mkdocs-unidata/issues",
-    "email": "mjames@ucar.edu"
+    "url": "https://github.com/Unidata/mkdocs-unidata/issues",
+    "email": "support@unidata.ucar.edu"
   },
   "license": "MIT",
   "author": {
-    "name": "Michael James",
-    "email": "mjames@ucar.edu"
+    "name": "Unidata",
+    "email": "support@unidata.ucar.edu"
   },
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mjames-upc/mkdocs-unidata.git"
+    "url": "https://github.com/Unidata/mkdocs-unidata.git"
   },
   "scripts": {
     "build": "scripts/build",
