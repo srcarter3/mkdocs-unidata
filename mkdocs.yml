@@ -21,12 +21,12 @@
 # Project information
 site_name: Unidata Material Design Theme
 site_description: A Custom Material Design Theme for MkDocs
-site_author: mjames@ucar.edu
+site_author: support@unidata.ucar.edu
 site_url: http://mjames-upc.github.io/mkdocs-unidata/
 site_favicon: 'assets/images/favicon.ico'
 # Repository
-repo_name: mjames-upc/mkdocs-unidata
-repo_url: https://github.com/mjames-upc/mkdocs-unidata
+repo_name: Unidata/mkdocs-unidata
+repo_url: https://github.com/Unidata/mkdocs-unidata
 remote_name: unidata
 
 # Theme directory

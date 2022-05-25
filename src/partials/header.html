@@ -23,6 +23,16 @@
 <!-- Application header -->
 <header class="md-header" data-md-component="header">
 
+  <!-- Corner image -->
+  {% if config.extra.corner_logo %}
+    <a href="{{ base_url }}">
+      <div class="background-logo" 
+          style="background-image: url({{ base_url }}/{{ config.extra.corner_logo }});
+                  background-repeat:no-repeat;
+                  height: 107px;"/>
+    </div>
+    {% endif %}
+
   <!-- Top-level navigation -->
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
@@ -54,7 +64,6 @@
       <!-- Header title -->
       <div class="md-flex__cell md-flex__cell--stretch">
         <span class="md-flex__ellipsis md-header-nav__title">
-{{ page.canonical_url}}
           {% block site_name %}
             {% if page %}
               {% for parent in page.ancestors %}
