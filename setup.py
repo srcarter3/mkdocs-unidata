@@ -43,6 +43,8 @@ setup(
     author_email = package["author"]["email"],
     keywords = package["keywords"],
     packages = find_packages(),
+    long_description=open("README.md", 'r').read(),
+    long_description_content_type='text/markdown',
     include_package_data = True,
     install_requires = install_requires,
     entry_points = {
